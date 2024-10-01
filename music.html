@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study with Music</title>
+    <link rel="stylesheet" href="assessment.css">
+    <script src="music.js" defer></script> <!-- External JS file for music functionality -->
+</head>
+<body>
+    <div class="music-container">
+        <h1>Study with Music</h1>
+        <div class="music-controls">
+            <button id="generate-music-btn">Generate Music</button><br><br>
+            <button id="start-timer-btn">Start Measuring</button><br><br>
+            <button id="pause-record-btn" style="display: none;">Pause and Record</button><br><br>
+            <button id="back-to-dashboard-btn" style="display: none;">Go Back to Dashboard</button><br><br>
+        </div>
+
+        <div id="timer-container">
+            <svg id="timer-circle" width="200" height="200" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" stroke-width="10" fill="none" class="background-circle"></circle>
+                <circle cx="50" cy="50" r="45" stroke-width="10" fill="none" class="progress-circle"></circle>
+            </svg>
+            <div id="time-elapsed">00:00:00</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Registration</title>
+    <link rel="stylesheet" href="register_styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h2>Register As An Alumni</h2>
+        <form id="alumniForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="institution">Institution Name:</label><br>
+            <input type="text" id="institution" name="institution" required><br><br>
+
+            <label for="domain">Domain:</label><br>
+            <input type="text" id="domain" name="domain" required><br><br>
+
+            <label for="graduationYear">Graduation Year:</label><br>
+            <select id="graduationYear" name="graduationYear" required>
+                <option value="" disabled selected>Select your year</option>
+                <!-- Generate options from 1997 to 2021 -->
+                <script>
+                    const startYear = 1997;
+                    const endYear = new Date().getFullYear(); // Current year
+                    for (let year = startYear; year <= endYear; year++) {
+                        document.write(`<option value="${year}">${year}</option>`);
+                    }
+                </script>
+            </select><br><br>
+
+            <label for="proof">Upload Proof of Graduation:</label><br>
+            <input type="file" id="proof" name="proof" accept=".pdf,.jpg,.jpeg,.png" required><br><br>
+
+            <button type="submit">Register</button><br><br>
+            <button onclick="dashboard.html">Go To Your Personalized Dashboard Now</button>
+        </form>
+    </div>
+
+    <script src="register_alumni_script.js"></script> <!-- Add your JS file -->
+
+</body>
+</html>

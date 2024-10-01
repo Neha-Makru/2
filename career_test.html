@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Test - KerrInspi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Career Test</h1>
+    </header>
+
+    <main>
+        <form id="career-test-form">
+            <h3>Please answer the following questions:</h3>
+
+            <!-- Skills Question (Checkboxes) -->
+            <label for="skills">What are your top skills? (Select up to 3)</label><br>
+            <input type="checkbox" name="skills" value="Communication"> Communication<br>
+            <input type="checkbox" name="skills" value="Problem Solving"> Problem Solving<br>
+            <input type="checkbox" name="skills" value="Technical Skills"> Technical Skills<br>
+            <input type="checkbox" name="skills" value="Creativity"> Creativity<br>
+            <input type="checkbox" name="skills" value="Leadership"> Leadership<br><br>
+
+            <!-- Interests Question (Checkboxes) -->
+            <label for="interests">What are your career interests? (Select all that apply)</label><br>
+            <input type="checkbox" name="interests" value="Technology"> Technology<br>
+            <input type="checkbox" name="interests" value="Arts and Design"> Arts and Design<br>
+            <input type="checkbox" name="interests" value="Science"> Science<br>
+            <input type="checkbox" name="interests" value="Business and Finance"> Business and Finance<br>
+            <input type="checkbox" name="interests" value="Healthcare"> Healthcare<br><br>
+
+            <!-- Work Environment Question -->
+            <label for="work_environment">What is your preferred work environment?</label><br>
+            <input type="checkbox" name="work_environment" value="Team-based"> Team-based<br>
+            <input type="checkbox" name="work_environment" value="Individual"> Individual<br>
+            <input type="checkbox" name="work_environment" value="Flexible"> Flexible<br>
+            <input type="checkbox" name="work_environment" value="Structured"> Structured<br><br>
+
+            <!-- Career Goals (Open Text) -->
+            <label for="career_goals">What are your career goals?</label><br>
+            <textarea id="career_goals" name="career_goals" rows="3" placeholder="Describe your career aspirations..."></textarea><br><br>
+
+            <!-- Strengths Question (Checkboxes) -->
+            <label for="strengths">What are your key strengths? (Select all that apply)</label><br>
+            <input type="checkbox" name="strengths" value="Analytical Thinking"> Analytical Thinking<br>
+            <input type="checkbox" name="strengths" value="Emotional Intelligence"> Emotional Intelligence<br>
+            <input type="checkbox" name="strengths" value="Leadership"> Leadership<br>
+            <input type="checkbox" name="strengths" value="Creativity"> Creativity<br>
+            <input type="checkbox" name="strengths" value="Adaptability"> Adaptability<br><br>
+
+            <!-- Motivation Question -->
+            <label for="motivation">What motivates you at work?</label><br>
+            <input type="checkbox" name="motivation" value="Financial Reward"> Financial Reward<br>
+            <input type="checkbox" name="motivation" value="Personal Growth"> Personal Growth<br>
+            <input type="checkbox" name="motivation" value="Helping Others"> Helping Others<br>
+            <input type="checkbox" name="motivation" value="Creativity and Innovation"> Creativity and Innovation<br>
+            <input type="checkbox" name="motivation" value="Stability and Security"> Stability and Security<br><br>
+
+            <!-- Values Question (Checkboxes) -->
+            <label for="values">Which values are most important to you in a job? (Select up to 3)</label><br>
+            <input type="checkbox" name="values" value="Work-Life Balance"> Work-Life Balance<br>
+            <input type="checkbox" name="values" value="Job Stability"> Job Stability<br>
+            <input type="checkbox" name="values" value="Creativity"> Creativity<br>
+            <input type="checkbox" name="values" value="Collaboration"> Collaboration<br>
+            <input type="checkbox" name="values" value="Innovation"> Innovation<br><br>
+
+            <button type="button" onclick="submitCareerTest()">Submit</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

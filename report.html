@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Report</title>
+    <link rel="stylesheet" href="report.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="report.js" defer></script>
+</head>
+<body>
+    <div class="report-container">
+        <h1>Assessment Report for Student: ABC</h1>
+        
+        <section>
+            <h2>Study Time Measured</h2>
+            <canvas id="studyTimeChart"></canvas>
+        </section>
+
+        <section>
+            <h2>Key Focus Areas</h2>
+            <canvas id="focusAreasChart"></canvas>
+        </section>
+
+        <section>
+            <h2>Career Progress</h2>
+            <canvas id="careerProgressChart"></canvas>
+        </section>
+
+        <section>
+            <h2>Assessment Results</h2>
+            <canvas id="assessmentResultsChart"></canvas>
+        </section>
+
+        <button onclick="goBack()">Go Back to Dashboard</button>
+    </div>
+</body>
+</html>

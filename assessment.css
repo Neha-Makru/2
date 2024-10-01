@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('img.jpg');
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+#timer {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button {
+    /* display: block; */
+    /* width: 100%; */
+    padding: 10px;
+    background-color: rgba(111, 84, 227, 0.8);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* circular timer*/
+
+#timer-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+#timer-circle {
+    position: relative;
+}
+
+.background-circle {
+    stroke: #ccc; /* Background circle color */
+}
+
+.progress-circle {
+    stroke: #00f; /* Progress circle color */
+    stroke-dasharray: 283; /* Circumference of the circle */
+    stroke-dashoffset: 283; /* Start at 0% (full offset) */
+    transition: stroke-dashoffset 1s linear;
+}
+
+#time-elapsed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Suggestions - KerrInspi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Career Suggestions</h1>
+    </header>
+
+    <main>
+        <section id="career-suggestion">
+            <h2>Suggested Career Paths</h2>
+            <p>Your suggested career paths will appear here based on your responses:</p>
+            <div id="suggestions"></div><br><br>
+
+            <!-- Thank You Message -->
+            <h3>Thank you for taking the test!</h3>
+            <p>We would like to know about your experience. Please fill out the feedback form below:</p>
+            
+            <!-- Feedback Form -->
+            <form id="feedback-form">
+                <label>How satisfied are you with the results?</label><br>
+                <input type="radio" name="satisfaction" value="accurate" required> It was accurate<br>
+                <input type="radio" name="satisfaction" value="not-accurate"> It wasn't that accurate<br>
+                <input type="radio" name="satisfaction" value="unsure"> I am not sure<br><br>
+                
+                <label for="other-suggestions">Other Suggestions:</label><br>
+                <textarea id="other-suggestions" rows="4" cols="50" placeholder="Your suggestions..."></textarea><br><br>
+            </form>
+
+            <button onclick="submitFeedback()">Submit Feedback</button><br><br>
+            <button onclick="goBack()">Take the Test Again</button><br><br>
+            <button onclick="goToHomePage()">Go Back to the Home Page</button>
+
+            <!-- Thank You Message Display -->
+            <div id="thank-you-message" style="display:none; margin-top: 20px; color: green;">
+                Thank you for your feedback!
+            </div>
+        </section>
+    </main>
+
+    <script src="results.js"></script>
+</body>
+</html>
+
+

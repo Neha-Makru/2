@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="register_styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h2>Register As A Student</h2><br> 
+        <form id="signupForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Academic Details:</label><br>
+            <input type="radio" name="academicLevel" value="10th" required> 10th<br>
+            <input type="radio" name="academicLevel" value="11th Grade"> 11th<br>
+            <input type="radio" name="academicLevel" value="12th Grade"> 12th<br>
+            <input type="radio" name="academicLevel" value="Undergraduate"> Undergraduate<br>
+            <input type="radio" name="academicLevel" value="Graduate"> Graduate<br><br>
+
+            <label for="domain">Please Enter The Domain You Wish/Are Pursuing:</label>
+            <input type="text" id="domain" name="domain" required><br><br>
+
+            <hr> 
+
+            <label for="technologies">Select Technologies:</label><br>
+            <div id="technologies">
+                <input type="checkbox" name="tech" value="AI"> AI<br>
+                <input type="checkbox" name="tech" value="Data Science"> Data Science<br>
+                <input type="checkbox" name="tech" value="Cyber Security"> Cyber Security<br>
+                <input type="checkbox" name="tech" value="Machine Learning"> Machine Learning<br>
+                <input type="checkbox" name="tech" value="Web Development"> Web Development<br>
+                <input type="checkbox" name="tech" value="Cloud Computing"> Cloud Computing<br>
+                <input type="checkbox" name="bio" value="Homeopathy"> Homeopathy<br>
+                <input type="checkbox" name="bio" value="Biotechnology"> Biotechnology<br>
+                <input type="checkbox" name="bio" value="Cardiology"> Cardiology<br>
+                <input type="checkbox" name="bio" value="General Physician"> General Physician<br>
+                <input type="checkbox" name="bio" value="Optician"> Optician<br>
+                <input type="checkbox" name="tech" value="Digital Marketing"> Digital Marketing<br>
+                <input type="checkbox" name="tech" value="Mobile App Development"> Mobile App Development<br>
+                <input type="checkbox" name="tech" value="Robotics"> Robotics<br>
+                <input type="checkbox" name="tech" value="Nanotechnology"> Nanotechnology<br>
+                <input type="checkbox" name="bio" value="Veterinarian"> Veterinarian<br>
+            </div><br><br> 
+
+            <label for="skip">Skip The Selection</label>
+            <input type="radio" id="skip" name="Skip Part"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+            <button type="submit">Register</button><br><br>
+        </form>
+    </div>
+
+    <script src="register_student_script.js"></script> <!-- Add your JS file -->
+</body>
+</html>
+
+

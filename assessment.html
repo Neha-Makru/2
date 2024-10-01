@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+    <link rel="stylesheet" href="assessment.css">
+    <script src="assessment.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Assessment Test</h1>
+    </header>
+    <main>
+        <div id="timer">Time Left: <span id="time">10:00</span></div>
+        <p>Evaluating Your Performance...</p>
+
+        <form id="assessment-form">
+            <h3>1. What is the primary goal of a neural network in machine learning?</h3>
+            <input type="radio" name="q1" value="A"> To maximize the accuracy of the model.<br>
+            <input type="radio" name="q1" value="B"> To minimize the loss function.<br>
+            <input type="radio" name="q1" value="C"> To reduce the complexity of the model.<br><br>
+
+            <h3>2. A team member is struggling to meet deadlines. How do you respond?</h3>
+            <input type="radio" name="q2" value="A"> Tell them to work harder and manage their time better.<br>
+            <input type="radio" name="q2" value="B"> Ignore the issue and focus on your own tasks.<br>
+            <input type="radio" name="q2" value="C"> Offer to help them with their tasks.<br><br>
+
+            <h3>3. What is the difference between supervised and unsupervised learning?</h3>
+            <input type="radio" name="q3" value="A"> Supervised learning involves unlabeled data, while unsupervised learning involves labeled data.<br>
+            <input type="radio" name="q3" value="B"> Supervised learning is used for regression tasks, while unsupervised learning is used for classification tasks.<br>
+            <input type="radio" name="q3" value="C"> Supervised learning involves labeled data, while unsupervised learning involves unlabeled data.<br><br>
+
+            <h3>4. You are working on a project with a tight deadline. How do you prioritize your tasks?</h3>
+            <input type="radio" name="q4" value="A"> Work on all tasks simultaneously to ensure everything is completed on time.<br>
+            <input type="radio" name="q4" value="B"> Delegate tasks to team members to free up your time.<br>
+            <input type="radio" name="q4" value="C"> Focus on the most critical tasks first and then move on to less important ones.<br><br>
+
+            <h3>5. What is the purpose of a convolutional neural network (CNN) in image processing?</h3>
+            <input type="radio" name="q5" value="A"> To classify images into different categories.<br>
+            <input type="radio" name="q5" value="B"> To generate new images based on existing ones.<br>
+            <input type="radio" name="q5" value="C"> To extract features from images.<br><br>
+
+            <h3>6. A team member is experiencing burnout. How do you respond?</h3>
+            <input type="radio" name="q6" value="A"> Tell them to work harder and push through the burnout.<br>
+            <input type="radio" name="q6" value="B"> Ignore the issue and focus on meeting deadlines.<br>
+            <input type="radio" name="q6" value="C"> Encourage them to take a break and prioritize their well-being.<br><br>
+
+            <h3>7. What is the difference between a decision tree and a random forest?</h3>
+            <input type="radio" name="q7" value="A"> A decision tree is used for regression tasks, while a random forest is used for classification tasks.<br>
+            <input type="radio" name="q7" value="B"> A decision tree is more accurate than a random forest.<br>
+            <input type="radio" name="q7" value="C"> A decision tree is a single tree, while a random forest is an ensemble of multiple trees.<br><br>
+
+            <h3>8. You are working on a project with a team. How do you handle conflicts?</h3>
+            <input type="radio" name="q8" value="A"> Avoid conflicts by not communicating with team members.<br>
+            <input type="radio" name="q8" value="B"> Address the conflict directly and try to resolve it through open communication.<br>
+            <input type="radio" name="q8" value="C"> Let the team lead handle the conflict.<br><br>
+
+            <h3>9. What is the purpose of a recurrent neural network (RNN) in natural language processing?</h3>
+            <input type="radio" name="q9" value="A"> To classify text into different categories.<br>
+            <input type="radio" name="q9" value="B"> To generate new text based on existing text.<br>
+            <input type="radio" name="q9" value="C"> To process sequential data such as text or speech.<br><br>
+
+            <h3>10. You are given a new project with a tight deadline. How do you approach it?</h3>
+            <input type="radio" name="q10" value="A"> Break down the project into smaller tasks and create a schedule to ensure timely completion.<br>
+            <input type="radio" name="q10" value="B"> Work on the project without a plan or schedule.<br>
+            <input type="radio" name="q10" value="C"> Delegate tasks to team members to free up your time.<br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result" style="display: none;">
+            <h2>Results</h2>
+            <p id="score"></p>
+            <button id="review-performance">Review Performance</button>
+        </div>
+
+        <div id="review-performance-div" style="display: none;">
+            <h2>Review Performance</h2>
+            <div id="review-questions"></div>
+            <button id="go-back-to-dashboard">Go Back to Dashboard</button>
+        </div>
+    </main>
+</body>
+</html>

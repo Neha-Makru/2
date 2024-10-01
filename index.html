@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KerrInspi - Write Your Career Path</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline style to control the layout next to the AI button */
+        .ai-guidance-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .ai-guidance-container img {
+            width: 150px; /* Set the width of the image */
+            height: auto;  /* Maintain aspect ratio */
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to KerrInspi</h1>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- "What We Do" Section -->
+        <section id="what-we-do">
+            <h2>What We Do</h2>
+            <p>
+                KerrInspi is designed to help students, alumni, and educators by providing a personalized career path based on 
+                individual interests and skills. Our platform allows you to register, take AI-driven career assessments, and 
+                explore study groups, mock tests, and resume building tools. The platform also gives personalized suggestions 
+                tailored to your academic background and career goals. With features like progress tracking, skill assessments, 
+                and career growth simulations, KerrInspi is dedicated to guiding you toward your ideal career. Whether you're 
+                starting as a student or transitioning as an alumnus, the AI-powered system offers tools and insights to help 
+                you reach your full potential. Come, Explore Us Now!
+            </p>
+        </section>
+
+        <!-- AI Career Guidance Button with Photo -->
+        <section id="ai-guidance">
+            <h1>Start Your Journey with AI Guidance</h1>
+            <div class="ai-guidance-container">
+                <!-- AI Career Guidance Button -->
+                <button id="ai-guidance-btn" onclick="redirectToTestPage()">
+                    <h3>Get AI Suggested Career Guidance</h3>
+                </button>
+
+                <!-- Image Next to the Button -->
+                <img src="photo.png" alt="Career Guidance Illustration">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Email Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

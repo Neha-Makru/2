@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script> <!-- External JS file -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>KerrInspi Dashboard</h1>
+            <div class="user-icon">
+                <img src="user_icon.png" alt="User Icon">
+                <div class="user-menu">
+                    <ul>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <div class="logout" onclick="log_out()">
+                            <li><a href="index.html">Logout</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="feature-grid">
+            <div class="feature" onclick="openMusicPage()">
+                <h3>Study with Music</h3>
+                <p>Enhance your study sessions with curated music playlists.</p>
+            </div>
+            <div class="feature">
+                <h3>Study Groups</h3>
+                <p>Join study groups to collaborate and learn together.</p>
+            </div>
+            <div class="feature">
+                <h3>Take Quizzes</h3>
+                <p>Test your knowledge with interactive quizzes.</p>
+            </div>
+            <div class="feature" onclick="openAssessment()">
+                <h3>Assessments</h3>
+                <p>Evaluate your learning with comprehensive assessments.</p>
+            </div>
+            
+            <!-- Assessment Reports Feature -->
+            
+            <div class="feature" onclick="openAssessmentReports()">
+                <h3>Assessment Reports</h3>
+                <p>View detailed assessment reports and insights.</p>
+            </div>
+
+            <div class="feature premium" onclick="showPremiumNotification()">
+                <h3>AI Mock Interviews ⭐</h3>
+                <p>Prepare for interviews with AI-driven mock interviews.</p>
+            </div>
+            <div class="feature premium" onclick="showPremiumNotification()">
+                <h3>AI Mock Tests ⭐</h3>
+                <p>Assess your knowledge with AI-generated mock tests.</p>
+            </div>
+            <div class="feature premium" onclick="showPremiumNotification()">
+                <h3>Mentor Connect ⭐</h3>
+                <p>Connect with mentors to guide your learning journey.</p>
+            </div>
+            <div class="feature premium" onclick="showPremiumNotification()">
+                <h3>Resume Builder ⭐</h3>
+                <p>Create professional resumes with our easy-to-use builder.</p>
+            </div>
+            <div class="feature">
+                <h3>Skill Courses</h3>
+                <p>Enroll in skill-based courses for your career advancement.</p>
+            </div>
+            <div class="feature">
+                <h3>Career Stimulation</h3>
+                <p>Explore career opportunities and pathways tailored for you.</p>
+            </div>
+            <div class="feature">
+                <h3>Bootcamps</h3>
+                <p>Intensive training programs to boost your skills.</p>
+            </div>
+            <div class="feature">
+                <h3>Volunteering Opportunities</h3>
+                <p>Engage in volunteering to gain experience and give back.</p>
+            </div>
+            <div class="feature premium" onclick="showPremiumNotification()">
+                <h3>Global Industry Trends ⭐</h3>
+                <p>Stay updated with the latest trends in your field globally.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
